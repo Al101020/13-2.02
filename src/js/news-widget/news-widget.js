@@ -16,6 +16,9 @@ class NewsWidget {
         const item = document.createElement('li');
 
         item.textContent = title;
+        item.classList.add('news-item');
+
+        item.dataset.id = +(new Date());
 
         this._element.insertBefore(item, this._element.querySelector('.news-item'));
         

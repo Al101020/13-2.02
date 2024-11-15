@@ -26,6 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if(!news.length) clearInterval(newsInterval);
     }, 10000);
 
+    const input = document.querySelector('.input');
+    
+    document.querySelector('.set-attribute').addEventListener('click', () => {
+        input.setAttribute('value', 'attribute');
+    })
+
+    document.querySelector('.set-value').addEventListener('click', () => {
+        input.value = 'value';
+    })
+
     // const input = document.querySelector('.input');
 
     // document.querySelector('.set-attribute').addEventListener('click', () => {
